@@ -12,11 +12,11 @@ function calculate() {
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result = result.toFixed(2) + "F"; // Para que sólo aparezca un decimal
+      result = result.toFixed(2) + ' Farenheit'; // Para que sólo aparezca un decimal
     }
     else {
       result = (num - 32)*5/9;
-      result = result.toFixed(2) + "C"; // Para que sólo aparezca un decimal
+      result = result.toFixed(2) + ' Celsius'; // Para que sólo aparezca un decimal
     }
     converted.innerHTML = result;
   }
@@ -41,8 +41,8 @@ function stuff () {
 	document.getElementById("sol3").innerHTML = "regexp";
 	document.getElementById("sol4").innerHTML = "temp.match(/[-+]?\d*\.?\d+([eE][-+]?\d+)?/)";
 	document.getElementById("sol5").innerHTML = "temp.match(/[cCfF]/)";
-	document.getElementById("sol6").innerHTML = "result.toFixed(2) + 'F';";
-	document.getElementById("sol7").innerHTML = "result.toFixed(2) + 'C';";
+	document.getElementById("sol6").innerHTML = "result.toFixed(2) + ' Farenheit';";
+	document.getElementById("sol7").innerHTML = "result.toFixed(2) + ' Celsius';";
 	
 }
 
