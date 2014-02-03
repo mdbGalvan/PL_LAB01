@@ -33,6 +33,7 @@
 		<dd>
 				<li><a href="#punto1">Explicación</a></li>
 				<li><a href="#punto2">Práctica 1 : Conversor de Temperatura</a></li>
+				<li><a href="#punto3">Pruebas : Estructura</a></li>
 		</dd>
 	</div>
 
@@ -53,7 +54,7 @@
 		Una de esas ventajas se verá al realizar el <i>testing</i> a <b>JavaScript</b> usando el framework <b>Mocha</b> 
 		y el assertion library para node.js <b>Chai</b>.</p>
 	
-		<!-- INTRODUCCIÓN -->
+		<!-- PRÁCTICA 1 -->
 		<p id="punto2"></p>
 		
 		<div id="titulillo">
@@ -67,7 +68,7 @@
 			<table>
 				<tr>
 					<th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-					<td><input id="original" onchange="calculate();"></td>
+					<td><input id="original" placeholder="32F" size="50" onchange="calculate();"></td>
 				</tr>
 				<tr>
 					<th>Converted Temperature:</th>
@@ -96,11 +97,11 @@ function calculate() {
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result += <span id="sol6">..............................</span>
+      result = <span id="sol6">..............................</span>
     }
     else {
       result = (num - 32)*5/9;
-      result += <span id="sol7">............................</span>
+      result = <span id="sol7">............................</span>
     }
     converted.innerHTML = result;
   }
@@ -114,6 +115,24 @@ function calculate() {
 	<input type="Button" value="Limpiar" onClick="erase()" class="myButton"><label for="name"><br><br>
 </div>
 
+		<!-- TESTS -->
+		<p id="punto2"></p>
+		
+		<div id="titulillo">
+			<span style="color:#CCC2A0;font-size:28px">• </span>Pruebas : Estructura
+		</div>
+
+		<p>Para esta parte se hizo necesario crear la estructura para las pruebas:</p>
+		
+<div id="codigo">
+<pre>
+mocha init tests
+</pre>
+</div>	
+
+		<p>Una vez realizado esto, se modificaría el archivo <b>index.html</b> añadiéndole los <b>JavaScript</b> (chai.js y temperature.js),
+		además, de los <i>input</i> y <i>span</i> que se utilizaron en la prácticas y se quieran probar.
+		
 	<footer>
 		<div id="vacio_arriba"></div>
 		<div id="final_arriba">
