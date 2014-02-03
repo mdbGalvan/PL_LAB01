@@ -45,3 +45,24 @@ function stuff () {
 	document.getElementById("sol7").innerHTML = "C;";
 	
 }
+
+function erase () {
+	
+	document.getElementById('sol1').style.color = '#000000';
+    //document.getElementById('sol1').style.fontWeight = 'bold';
+	document.getElementById('sol2').style.color = '#000000';
+	document.getElementById('sol3').style.color = '#000000';
+	document.getElementById('sol4').style.color = '#000000';
+	document.getElementById('sol5').style.color = '#000000';
+	document.getElementById('sol6').style.color = '#000000';
+	document.getElementById('sol7').style.color = '#000000';
+
+	document.getElementById("sol1").innerHTML = "...........";
+	document.getElementById("sol2").innerHTML = "...........";
+	document.getElementById("sol3").innerHTML = "...........";
+	document.getElementById("sol4").innerHTML = "...........";
+	document.getElementById("sol5").innerHTML = "...........";
+	document.getElementById("sol6").innerHTML = "...........";
+	document.getElementById("sol7").innerHTML = "...........";
+	
+}
