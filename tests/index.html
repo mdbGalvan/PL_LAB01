@@ -9,8 +9,12 @@
   <body>
     <div id="mocha"></div>
 	
+	<input id="original" placeholder="32F" size="50""> <!-- Add input y span del index.html principal -->
+	<span class="output" id="converted">
+	
 	<script src="http://chaijs.com/chai.js"></script> <!-- Add chai.js -->
     <script src="mocha.js"></script>
+	<script src="../temperatura.js"></script> <!-- Add temperature.js -->
     <script>mocha.setup('bdd')</script>
     <script src="tests.js"></script>
     <script>
