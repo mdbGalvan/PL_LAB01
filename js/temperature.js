@@ -41,8 +41,8 @@ function stuff () {
 	document.getElementById("sol3").innerHTML = "regexp";
 	document.getElementById("sol4").innerHTML = "temp.match(/[-+]?\d*\.?\d+([eE][-+]?\d+)?/)";
 	document.getElementById("sol5").innerHTML = "temp.match(/[cCfF]/)";
-	document.getElementById("sol6").innerHTML = "result.toFixed(2) + "F";";
-	document.getElementById("sol7").innerHTML = "result.toFixed(2) + "C";";
+	document.getElementById("sol6").innerHTML = "result.toFixed(2) + 'F';";
+	document.getElementById("sol7").innerHTML = "result.toFixed(2) + 'C';";
 	
 }
 
