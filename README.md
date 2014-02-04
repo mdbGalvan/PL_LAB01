@@ -1,4 +1,4 @@
-## ***
+***
 >**Autora:**         *María D. Batista Galván*  
 >**Fecha:**          *Domingo 03 de Febrero de 2014*  
 >**Asignatura:**     *Procesadores de Lenguajes.*  
