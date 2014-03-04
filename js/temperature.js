@@ -26,43 +26,25 @@ function calculate() {
 }
 
 function stuff () {
-	
-	document.getElementById('sol1').style.color = '#0101ff';
-    //document.getElementById('sol1').style.fontWeight = 'bold';
-	document.getElementById('sol2').style.color = '#0101ff';
-	document.getElementById('sol3').style.color = '#0101ff';
-	document.getElementById('sol4').style.color = '#0101ff';
-	document.getElementById('sol5').style.color = '#0101ff';
-	document.getElementById('sol6').style.color = '#0101ff';
-	document.getElementById('sol7').style.color = '#0101ff';
 
-	document.getElementById("sol1").innerHTML = "original";
-	document.getElementById("sol2").innerHTML = "([-+]?\d+(?:\.\d*)?(?:[eE][-+]?\d+)?)\s*([fFcC])";
-	document.getElementById("sol3").innerHTML = "regexp";
-	document.getElementById("sol4").innerHTML = "temp.match(m[1])";
-	document.getElementById("sol5").innerHTML = "temp.match(m[2])";
-	document.getElementById("sol6").innerHTML = "result.toFixed(2) + ' Farenheit';";
-	document.getElementById("sol7").innerHTML = "result.toFixed(2) + ' Celsius';";
-	
+	$("span.gap").css("background-color","#9A2EFE");
+	$("span.gap").css("color","white");
+
+	$('#sol1').text("original");
+	$('#sol2').text("([-+]?\d+(?:\.\d*)?(?:[eE][-+]?\d+)?)\s*([fFcC])");
+	$('#sol3').text("regexp");
+	$('#sol4').text("temp.match(m[1])");
+	$('#sol5').text("temp.match(m[2])");
+	$('#sol6').text("result.toFixed(2) + ' Farenheit';");
+	$('#sol7').text("result.toFixed(2) + ' Celsius';");
 }
 
 function erase () {
-	
-	document.getElementById('sol1').style.color = '#000000';
-    //document.getElementById('sol1').style.fontWeight = 'bold';
-	document.getElementById('sol2').style.color = '#000000';
-	document.getElementById('sol3').style.color = '#000000';
-	document.getElementById('sol4').style.color = '#000000';
-	document.getElementById('sol5').style.color = '#000000';
-	document.getElementById('sol6').style.color = '#000000';
-	document.getElementById('sol7').style.color = '#000000';
-
-	document.getElementById("sol1").innerHTML = "...........";
-	document.getElementById("sol2").innerHTML = "...........";
-	document.getElementById("sol3").innerHTML = "...........";
-	document.getElementById("sol4").innerHTML = "...........";
-	document.getElementById("sol5").innerHTML = "...........";
-	document.getElementById("sol6").innerHTML = "...........";
-	document.getElementById("sol7").innerHTML = "...........";
-	
+	$("span.gap").css("color","black");
+	$("span.gap").css("background-color","#D6B64C");
+	$("span.gap").text('_______');	
 }
+
+window.onload = function() {
+	erase();
+};
